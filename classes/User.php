@@ -6,9 +6,9 @@ class User {
     protected $email;
     protected $address;
     protected $card;
-
-    public function __construct($_nome, $_cognome, $_email, $_address)
-    {
+    protected $sconto = 0;
+    
+    public function __construct($_nome, $_cognome, $_email, $_address) {
 
         $this->setNome($_nome);
         $this->setCognome($_cognome);
@@ -63,5 +63,15 @@ class User {
     public function getAddress() {
 
         return $this->address;
+    }
+
+    public function setCard($_card) {
+
+        $this->card = $_card;
+    }
+
+    public function getCard() {
+
+        return $this->card;
     }
 }
