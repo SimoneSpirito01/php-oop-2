@@ -7,7 +7,7 @@ class User {
     protected $address;
     protected $card;
     protected $sconto = 0;
-    
+
     public function __construct($_nome, $_cognome, $_email, $_address) {
 
         $this->setNome($_nome);
@@ -73,5 +73,10 @@ class User {
     public function getCard() {
 
         return $this->card;
+    }
+
+    public function getSconto() {
+
+        return $this->sconto;
     }
 }
